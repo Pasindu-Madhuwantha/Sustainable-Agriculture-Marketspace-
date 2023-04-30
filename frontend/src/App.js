@@ -16,7 +16,7 @@ import UpdateProfile from './components/sellerProfile/UpdateProfile';
 import UpdatePassword from './components/sellerProfile/UpdatePassword';
 import ForgotPassword from './components/sellerProfile/ForgotPassword';
 import NewPassword from './components/sellerProfile/NewPassword';
-
+import WeatherApp from './components/weather/Weather';
 import Dashboard from './components/seller/Dashboard'
 
 
@@ -43,6 +43,7 @@ function App() {
       <Route path="/register" component={Register}></Route>
       <Route path="/password/reset/:token" component={NewPassword} exact />
       <Route path="/password/forgot" component={ForgotPassword} exact />
+      <Route path="/weather" component={WeatherApp} exact />
       <ProtectedRoute path="/me" component={Profile} exact></ProtectedRoute>
       <ProtectedRoute path="/me/update" component={UpdateProfile} exact />
       <ProtectedRoute path="/password/update" component={UpdatePassword} exact />
@@ -52,6 +53,7 @@ function App() {
       <ProtectedRoute path="/seller/product/:id" isAdmin={true} component={UpdateProduct} exact />
       <ProtectedRoute path="/seller/orders" isAdmin={true} component={OrdersList} exact />
       <ProtectedRoute path="/seller/order/:id" isAdmin={true} component={ProcessOrder} exact />
+      
       {/* { <Redirect from="/" to="/seller/login" /> } */}
 
       {!loading && (!isAuthenticated || user.role !== 'seller') && (
