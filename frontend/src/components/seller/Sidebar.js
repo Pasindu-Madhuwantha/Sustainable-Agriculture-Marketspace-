@@ -35,7 +35,7 @@ const Sidebar = () => {
                     </li>
 
                     <li>
-                        <Link to="/weather"><i className="fa fa-star"></i> Weather</Link>
+                        <Link to="/weather"><i class="fa fa-cloud"></i>Weather</Link>
                     </li>
 
                 </ul>
