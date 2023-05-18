@@ -1,0 +1,35 @@
+{
+  "name": "sustainable-agriculture-marketspace-",
+  "version": "1.0.0",
+  "description": "ecommerce application using mern",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PODUCTION& nodemon backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pasindu-Madhuwantha/Sustainable-Agriculture-Marketspace-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pasindu-Madhuwantha/Sustainable-Agriculture-Marketspace-/issues"
+  },
+  "homepage": "https://github.com/Pasindu-Madhuwantha/Sustainable-Agriculture-Marketspace-#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.1",
+    "nodemailer": "^6.9.2",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
